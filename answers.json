@@ -1,0 +1,41 @@
+{
+    "yes": [
+        "Of course",
+        "Definitely",
+        "No doubt",
+        "Believe in yourself",
+        "True",
+        "Yes but don't force it",
+        "Never say never",
+        "Probably",
+        "Ask to nearest person around you",
+        "Keep working on it",
+        "Yeah",
+        "Let's do it then",
+        "Good idea",
+        "Nicely thought",
+        "Great idea",
+        "Smartly thought",
+        "Smart desicion",
+        "Worth it"
+    ],
+    "no": [
+        "Not really",
+        "Highly doubt",
+        "Of course not",
+        "Keep believing that",
+        "No",
+        "False",
+        "Never",
+        "Thats a lie",
+        "Will never come true",
+        "Probably not",
+        "Ask to your mom",
+        "Yeaaa... No",
+        "Not really sure about it",
+        "Maybe not",
+        "You gotta start being more realistic",
+        "Dont feeling like it",
+        "Not really worth it"
+    ]
+}
