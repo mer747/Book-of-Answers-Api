@@ -8,29 +8,34 @@ api = Api(app)
 
 
 class Yes(Resource):
-    def get(Resource):
+    def get(self):
         with open("answers.json", "r") as file:
             data = json.load(file)
             answer = random.choice(data["yes"])
-            return {"answer": answer}
+            return {"answer": answer, "type": "yes"}
 
 
 class No(Resource):
-    def get(Resource):
+    def get(self):
         with open("answers.json", "r") as file:
             data = json.load(file)
             answer = random.choice(data["no"])
-            return {"answer": answer}
+            return {"answer": answer, "type": "no"}
 
 
 class Random(Resource):
-    def get(Resource):
+    def get(self):
         with open("answers.json", "r") as file:
             data = json.load(file)
-            decide = [data["yes"], data["no"]]
+            yes = data["yes"]
+            no = data["no"]
+            decide = [yes, no]
             randomize = random.choice(decide)
             answer = random.choice(randomize)
-            return {"answer": answer}
+            if randomize == yes:
+                return {"answer": answer, "type": "yes"}
+            elif randomize == no:
+                return {"answer": answer, "type": "no"}
 
 
 api.add_resource(No, "/no")
