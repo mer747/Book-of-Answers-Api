@@ -1,1 +1,1 @@
-worker: pyton main.py
+worker: pyton main.py runserver 0.0.0.0:5000
