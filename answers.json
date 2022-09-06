@@ -17,7 +17,9 @@
         "Great idea",
         "Smartly thought",
         "Smart desicion",
-        "Worth it"
+        "Worth it",
+        "Obvious",
+        "Obviously"
     ],
     "no": [
         "Not really",
@@ -36,6 +38,7 @@
         "Maybe not",
         "You gotta start being more realistic",
         "Dont feeling like it",
-        "Not really worth it"
+        "Not really worth it",
+        "Obviously not"
     ]
 }
