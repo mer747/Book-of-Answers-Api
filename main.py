@@ -43,4 +43,4 @@ api.add_resource(Yes, "/yes")
 api.add_resource(Random, "/random")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
