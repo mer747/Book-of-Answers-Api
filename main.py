@@ -3,44 +3,17 @@ from flask_restful import Api, Resource
 import json
 import random
 
+import generator.yes as yesAnswer
+import generator.no as noAnswer
+import generator.random as randomAnswer
+
 app = Flask(__name__)
 api = Api(app)
 
 
-class Yes(Resource):
-    def get(self):
-        with open("answers.json", "r") as file:
-            data = json.load(file)
-            answer = random.choice(data["yes"])
-            return {"answer": answer, "type": "yes"}
-
-
-class No(Resource):
-    def get(self):
-        with open("answers.json", "r") as file:
-            data = json.load(file)
-            answer = random.choice(data["no"])
-            return {"answer": answer, "type": "no"}
-
-
-class Random(Resource):
-    def get(self):
-        with open("answers.json", "r") as file:
-            data = json.load(file)
-            yes = data["yes"]
-            no = data["no"]
-            decide = [yes, no]
-            randomize = random.choice(decide)
-            answer = random.choice(randomize)
-            if randomize == yes:
-                return {"answer": answer, "type": "yes"}
-            elif randomize == no:
-                return {"answer": answer, "type": "no"}
-
-
-api.add_resource(No, "/no")
-api.add_resource(Yes, "/yes")
-api.add_resource(Random, "/random")
+api.add_resource(noAnswer.No, "/no")
+api.add_resource(yesAnswer.Yes, "/yes")
+api.add_resource(randomAnswer.Random, "/random")
 
 if __name__ == '__main__':
     app.run(debug=False)
