@@ -1,7 +1,5 @@
 from flask import Flask
-from flask_restful import Api, Resource
-import json
-import random
+from flask_restful import Api
 
 import generator.yes as yesAnswer
 import generator.no as noAnswer
