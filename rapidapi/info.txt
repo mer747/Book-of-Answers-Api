@@ -1,0 +1,2 @@
+This project is a rapidapi project.
+Link to hub: https://rapidapi.com/mer747/api/book-of-answers
