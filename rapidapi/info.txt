@@ -1,2 +1,2 @@
-This project is a rapidapi project.
+This project is a rapidapi project. (Experimental)
 Link to hub: https://rapidapi.com/mer747/api/book-of-answers
